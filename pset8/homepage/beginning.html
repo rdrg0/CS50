@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Beginning</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function blink()
+            {
+                let title = document.querySelector(".title");
+
+                if (title.style.color === "grey")
+                {
+                    title.style.color = "white";
+                }
+                else
+                {
+                    title.style.color = "grey";
+                }
+            }
+            window.setInterval(blink, 100);
+        </script>
+    </head>
+    <body>
+        <div class="title"><a class="homelink" href="/index">Top 5</a></div>
+        <div class="content">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/kPFnaD2_ji4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="title">
+            From The Beginning - Emerson Lake and Palmer
+        </div>
+    </body>
+</html>
+
+

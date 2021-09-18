@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function blink()
+            {
+                let title = document.querySelector(".title");
+
+                if (title.style.color === "grey")
+                {
+                    title.style.color = "white";
+                }
+                else
+                {
+                    title.style.color = "grey";
+                }
+            }
+            window.setInterval(blink, 100);
+        </script>
+    </head>
+    <body>
+        <div class="title">Top 5</div>
+        <div class="content">
+            <div class = "text">
+                <p><a class="paragraph" href="/space">1. Space Oddity - David Bowie</a></p>
+                <p><a class="paragraph" href="/nikita">2. Nikita - Elton John</a></p>
+                <p><a class="paragraph" href="/eye">3. Eye In The Sky - Alan Parsons</a></p>
+                <p><a class="paragraph" href="/beginning">4. From The Beginning - ELP</a></p>
+                <p><a class="paragraph" href="/knife">5. Mack The Knife - Bobby Darin</a></p>
+            </div>
+        </div>
+
+
+
+
+
+    </body>
+</html>

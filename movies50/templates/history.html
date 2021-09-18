@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead align=left>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+
+        <tbody align=left>
+                {% for i in range(transactions|length): %}
+                <tr>
+                    <td>{{transactions[i]['symbol']}}</td>
+                    <td>{{transactions[i]['shares']}}</td>
+                    <td>{{transactions[i]['price']}}</td>
+                    <td>{{transactions[i]['time']}}</td>
+                </tr>
+                {% endfor %}
+
+
+        </tbody>
+    </table>
+
+
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead align=left>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tfoot align=left>
+            <tr>
+                <td colspan="4"></td>
+                <td><b>{{total}}</b></td>
+            </tr>
+        </tfoot>
+        <tbody align=left>
+                {% for i in range(stocks|length): %}
+                {% if stocks[i]['shares'] > 0 %}
+                <tr>
+                    <td>{{stocks[i]['symbol']}}</td>
+                    <td>{{stocks[i]['name']}}</td>
+                    <td>{{stocks[i]['shares']}}</td>
+                    <td>{{stocks[i]['price']|usd}}</td>
+                    <td>{{(stocks[i]['price']*stocks[i]['shares'])|usd}}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+                <tr>
+                    <td colspan="4">CASH</td>
+                    <td>{{cash}}</td>
+                </tr>
+
+
+        </tbody>
+    </table>
+
+
+
+{% endblock %}

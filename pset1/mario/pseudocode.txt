@@ -1,0 +1,4 @@
+prompt user for pyramid height
+assign h to height
+if h is less than 1 or greater that 8 go back to line 1
+make a loop starting at i=1 until i<h+1 that prints h-i points followed by i dashes

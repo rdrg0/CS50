@@ -1,0 +1,54 @@
+.text
+{
+
+    font-family: helvetica;
+    text-align: justify;
+    display: inline-block;
+
+
+
+
+}
+
+.title
+{
+    font-weight: bold;
+    font-size: 350%;
+    padding: 25px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+
+}
+
+
+.paragraph
+{
+    font-size: 150%;
+    color: grey;
+}
+
+.paragraph:hover
+{
+    font-size: 150%;
+    color: darkgrey;
+}
+
+.content
+{
+    padding: 50px;
+    text-align: center;
+
+}
+
+.homelink
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.homelink:hover
+{
+    color: inherit;
+    text-decoration: none;
+}
